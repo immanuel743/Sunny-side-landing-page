@@ -1,0 +1,186 @@
+.heading {
+  font-size: 2.2rem;
+  color: $White;
+}
+.active {
+  display: block;
+}
+
+.item {
+  &__image {
+    height: 30rem;
+    padding: 0;
+    & img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__textcontent {
+    height: 30rem;
+    text-align: center;
+    display: grid;
+    // margin: auto;
+    place-content: center;
+    & .container {
+      padding: 2rem 1rem;
+    }
+    @include respond($phone) {
+      text-align: left;
+      padding: 0;
+    }
+    & h1 {
+      color: $Verydarkdesaturatedblue;
+      font-size: 2.5rem;
+      width: 80%;
+      margin: 0 auto 1rem;
+      @include respond($phone) {
+        margin: 0;
+      }
+    }
+    & p {
+      line-height: 1.5;
+      font-size: 1.6rem;
+    }
+    & a {
+      text-transform: uppercase;
+      text-decoration: none;
+      margin: 1rem 0;
+      font-size: 1.4rem;
+      color: $Verydarkdesaturatedblue;
+    }
+  }
+}
+
+.service {
+  position: relative;
+  max-width: 100%;
+  flex: 1;
+  &__image {
+    position: relative;
+    width: 100%;
+    height: 40rem;
+    @include respond($phone-sm) {
+      height: 50rem;
+    }
+    @include respond($phone) {
+      height: 43rem;
+    }
+    @include respond($tab-land) {
+      height: 55rem;
+    }
+    & img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__text {
+    background-color: transparent;
+    position: absolute;
+    top: 20rem;
+    left: 50%;
+    // height: 20rem;
+    text-align: center;
+    width: 80%;
+    // margin: 0 auto;
+    transform: translate(-50%, 0);
+    padding: 1rem;
+
+    z-index: 2;
+    @include respond($phone-sm) {
+      top: 29rem;
+    }
+    @include respond($phone) {
+      top: 24rem;
+      padding: 0 1rem;
+    }
+    @include respond($tab-land) {
+      top: 38rem;
+      // padding: 0 1rem;
+    }
+    & h1 {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.photography {
+  & .service__text {
+    & h1,
+    & p {
+      color: $photography-text;
+    }
+  }
+}
+.graphic {
+  & .service__text {
+    & h1,
+    & p {
+      color: $graphic-design-text;
+    }
+  }
+}
+.logo {
+  &-img {
+    margin: 1rem 0 2.5rem;
+  }
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  & li {
+    list-style: none;
+    & a {
+      color: $graphic-design-text;
+      text-decoration: none;
+      font-size: 1.4rem;
+      &:hover {
+        color: $White;
+      }
+    }
+  }
+}
+
+.btn {
+  &__wrap {
+    display: flex;
+    justify-self: start;
+    padding: 1rem;
+    @media screen and (max-width: $phone) {
+      justify-self: center;
+    }
+  }
+  &-lm {
+    position: relative;
+    justify-self: center;
+    display: flex;
+
+    z-index: 10;
+    margin-top: 3rem;
+    @include respond($phone) {
+      justify-self: start;
+    }
+    // height: 6rem;
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      min-width: 100%;
+      height: 0.6rem;
+      top: 1rem;
+      border-radius: 2rem;
+    }
+    &--yellow {
+      &::after {
+        background-color: $Yellow;
+      }
+    }
+    &--pink {
+      &::after {
+        background-color: $Softred;
+      }
+    }
+  }
+}

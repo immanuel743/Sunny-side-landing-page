@@ -1,0 +1,27 @@
+@mixin respond($screen) {
+  @if $screen == $phone-sm {
+    @media screen and(min-width:$phone-sm) {
+      @content;
+    }
+  }
+  @if $screen == $phone {
+    @media screen and(min-width:$phone) {
+      @content;
+    }
+  }
+  @if $screen == $tab-land {
+    @media screen and(min-width:$tab-land) {
+      @content;
+    }
+  }
+  @if $screen == $laptop {
+    @media screen and(min-width:$laptop) {
+      @content;
+    }
+  }
+  @if $screen == $larger-screen {
+    @media screen and(min-width:$larger-screen) {
+      @content;
+    }
+  }
+}
