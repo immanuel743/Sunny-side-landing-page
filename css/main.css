@@ -21,13 +21,19 @@ html {
   }
 }
 
+body {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+}
+
 img {
   max-width: 100%;
 }
 
 h1 {
   font-size: 2rem;
-  font-family: "Barlow", sans-serif;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
 }
 
 p {
@@ -351,89 +357,6 @@ p {
 }
 .btn-lm--pink::after {
   background-color: hsl(7deg, 99%, 70%);
-}
-
-.nav {
-  background-color: hsl(195deg, 100%, 55%);
-  width: 100%;
-  height: 6rem;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-}
-.nav__item {
-  list-style: none;
-}
-.nav__item li {
-  display: inline-block;
-  margin: 1.5rem 0;
-}
-.nav__item li:last-child {
-  background-color: #fff;
-  border-radius: 1.6rem;
-  padding: 0.6rem 1rem;
-  text-transform: uppercase;
-}
-.nav__item li:last-child a {
-  color: hsl(212deg, 27%, 19%);
-}
-.nav__item li:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  transition: 0.2s;
-}
-@media screen and (max-width: 600px) {
-  .nav__item li {
-    margin: 1rem 0;
-    display: block;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .nav__item {
-    display: flex;
-  }
-}
-@media screen and (max-width: 600px) {
-  .nav__item {
-    position: absolute;
-    top: 6rem;
-    left: 50%;
-    transform: translate(-50%, 0);
-    display: none;
-    text-align: center;
-    background-color: hsl(0deg, 0%, 100%);
-    width: 80%;
-    height: 20rem;
-    margin: 0 auto;
-    padding: 3rem 0;
-    -webkit-clip-path: polygon(0 10%, 90% 10%, 100% 0, 100% 11%, 100% 100%, 57% 100%, 0 100%);
-            clip-path: polygon(0 10%, 90% 10%, 100% 0, 100% 11%, 100% 100%, 57% 100%, 0 100%);
-  }
-}
-.nav__item a {
-  text-decoration: none;
-  color: hsl(0deg, 0%, 100%);
-  font-size: 1.6rem;
-  line-height: 1.5;
-  padding: 1rem;
-}
-@media screen and (max-width: 600px) {
-  .nav__item a {
-    color: hsl(232deg, 10%, 55%);
-  }
-}
-.nav .close {
-  display: none;
-}
-
-.menu {
-  display: none;
-}
-@media screen and (max-width: 600px) {
-  .menu {
-    display: block;
-  }
 }
 
 .card {
