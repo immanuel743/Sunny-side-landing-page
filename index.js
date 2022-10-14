@@ -4,4 +4,3 @@ const mobileMenu = document.querySelector(".nav__item");
 menu.addEventListener("click", () => {
   mobileMenu.classList.toggle("active");
 });
-// mobileMenu.style.display = "none";

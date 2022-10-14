@@ -16,10 +16,10 @@
   }
   & h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
     text-transform: uppercase;
     color: #fff;
-    width: 60%;
+    width: 80%;
     margin: 8rem auto 0;
     @include respond($tab-land) {
       font-size: 5rem;
@@ -33,7 +33,7 @@
   }
 }
 .productHighlight {
-  width: 100%;
+  width: $hundred;
   & .item {
     &:nth-child(1) {
       @include respond($phone) {
@@ -53,7 +53,7 @@
       max-width: 100%;
       flex: 1;
       margin: 0 auto;
-      height: auto;
+      height: 40rem;
     }
   }
 }
@@ -78,7 +78,7 @@
     // display: flex;
     // flex-wrap: wrap;
     display: grid;
-    width: 100%;
+    width: $hundred;
     justify-content: center;
     grid-template-columns: repeat(2, minmax(100px, 250px));
     grid-template-rows: repeat(2, 10rem);
@@ -88,20 +88,20 @@
   }
   & .item--img {
     max-width: 15rem;
-    width: 100%;
+    width: $hundred;
     @include respond($phone) {
       max-width: 100%;
     }
     & img {
       height: 100%;
-      width: 100%;
+      width: $hundred;
       object-fit: cover;
     }
   }
 }
 
 .services {
-  width: 100%;
+  width: $hundred;
   @include respond($phone) {
     display: flex;
   }

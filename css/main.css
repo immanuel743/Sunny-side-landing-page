@@ -65,10 +65,10 @@ p {
 }
 .hero h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
   text-transform: uppercase;
   color: #fff;
-  width: 60%;
+  width: 80%;
   margin: 8rem auto 0;
 }
 @media screen and (min-width: 47.5em) {
@@ -101,7 +101,7 @@ p {
   max-width: 100%;
   flex: 1;
   margin: 0 auto;
-  height: auto;
+  height: 40rem;
 }
 
 .testimonials {
@@ -184,7 +184,7 @@ p {
 }
 
 .item__image {
-  height: 30rem;
+  height: 40rem;
   padding: 0;
 }
 .item__image img {
@@ -194,7 +194,7 @@ p {
      object-fit: cover;
 }
 .item__textcontent {
-  height: 30rem;
+  height: 40rem;
   text-align: center;
   display: grid;
   place-content: center;
@@ -357,6 +357,90 @@ p {
 }
 .btn-lm--pink::after {
   background-color: hsl(7deg, 99%, 70%);
+}
+
+.nav__container {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  height: 5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__item {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .nav__item {
+    position: absolute;
+    top: 6rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: none;
+    text-align: center;
+    background-color: hsl(0deg, 0%, 100%);
+    max-width: 40rem;
+    width: 80%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    margin: 0 auto;
+    padding: 5rem 0;
+    flex-direction: column;
+    -webkit-clip-path: polygon(0 10%, 90% 10%, 100% 0, 100% 11%, 100% 100%, 57% 100%, 0 100%);
+    clip-path: polygon(0 10%, 90% 10%, 100% 0, 100% 11%, 100% 100%, 57% 100%, 0 100%);
+  }
+}
+.nav__item li {
+  list-style: none;
+  margin: 0 1.5rem;
+}
+@media screen and (max-width: 600px) {
+  .nav__item li {
+    margin: 1rem 0;
+  }
+}
+.nav__item li:nth-child(4) {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: hsl(212deg, 27%, 19%);
+}
+@media screen and (max-width: 600px) {
+  .nav__item li:nth-child(4) {
+    background-color: hsl(51deg, 100%, 49%);
+  }
+}
+.nav__item li:nth-child(4) a {
+  text-transform: uppercase;
+  color: hsl(212deg, 27%, 19%);
+}
+.nav__item li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 600px) {
+  .nav__item li a {
+    color: hsl(210deg, 4%, 67%);
+    font-size: 1.6rem;
+  }
+}
+
+.menu {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .active {
+    display: flex;
+  }
 }
 
 .card {
