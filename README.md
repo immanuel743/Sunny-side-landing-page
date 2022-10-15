@@ -35,7 +35,8 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL:
+  [Add live site URL here](https://resonant-mooncake-3fbcdd.netlify.app)
 
 ## My process
 
@@ -76,7 +77,8 @@ width i changed the flex direction to column.
 
 3)Sharpened my saas skills a little since i almost know every thing in theory
 but don't have actually used it practically all by myself . Yeah i created a
-mixin for my media queries.Now i'll never forget it😂😁.
+mixin for my media queries.Now i'll never forget it😂😁. 4) Also had the chance
+to pratice responsive web design
 
 <!-- code i'm talking about -->
 
@@ -89,6 +91,11 @@ mixin for my media queries.Now i'll never forget it😂😁.
       display: none;
 
 } }
+
+### continued-development
+
+I would love to refactor the code some times later and also add the hover
+effects
 
 ### Useful resources
 
